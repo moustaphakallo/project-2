@@ -1,0 +1,46 @@
+
+
+.Login a{
+  
+    text-decoration: none;
+   
+    color: white;
+
+}
+.Login{
+background-color: rgba(44, 11, 11, 0.377);
+ gap: 40px;
+}
+.you{
+    padding-left: 400px;
+}
+
+.you h1{
+color: white;
+
+}
+.you h6{
+  color: rgba(88, 52, 52, 0.288);   
+}
+.Are{
+    background-color: rgba(238, 255, 0, 0.801);
+}
+.few img{
+
+
+
+}
+.few {
+    display: flex;
+  width: 497px ; 
+  height: 497px;
+  
+}
+.alt img{
+    height:500px;
+    width: 500px;
+}
+.near img{
+    height:600px;
+    width: 700px;
+}
