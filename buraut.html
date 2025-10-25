@@ -4,11 +4,450 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+      body {
+        font-family: "Source Sans 3", sans-serif;
+      }
+
+      .food {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 12px;
+      }
+      .food h1 {
+        color: #f17228;
+      }
+      .food .waGon {
+        color: #ffb30e;
+      }
+      .food img {
+        width: 28px;
+        height: 30px;
+      }
+      .Bus {
+        display: flex;
+        align-items: center;
+      }
+      .Bus h1 {
+        color: black;
+      }
+      .Search {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px #ffae004a;
+        padding: 1px 20px;
+      }
+      .user p {
+        color: #ffd000fb;
+      }
+      .Deliver {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .Are h1 {
+        color: white;
+      }
+      .Are {
+        background-color: rgb(255, 217, 0);
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .moto {
+        display: flex;
+        text-align: center;
+        border-radius: 12px;
+        margin-right: 800px;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        gap: 12px;
+      }
+      .moto p {
+        color: #f17228;
+        padding-right: 200px;
+      }
+      .Pickup {
+        display: flex;
+        color: black;
+        gap: 12px;
+      }
+      .Pickup p {
+        color: black;
+      }
+      .ind {
+        display: block;
+      }
+      .EnterYourAddress {
+        display: flex;
+        text-align: center;
+        border-radius: 12px;
+        margin-right: 800px;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        gap: 12px;
+      }
+      .EnterYourAddress p {
+        color: rgba(0, 0, 0, 0.301);
+      }
+      .FindFood {
+        align-items: center;
+        display: flex;
+        gap: 12px;
+        justify-content: space-around;
+      }
+      .Your {
+        background-color: rgba(240, 255, 255, 0.5);
+        border-radius: 12px;
+        margin-right: 200px;
+      }
+      .Address {
+        background-color: #f65900;
+        color: white;
+        border-radius: 8px;
+      }
+      .Days img {
+        height: 200px;
+        width: 200px;
+      }
+
+      .Howdoesitwork {
+        color: #f17228;
+        text-align: center;
+      }
+      .Select {
+        display: block;
+      }
+      .Choose {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .FlashDeals {
+        color: #f17228;
+        text-align: center;
+      }
+
+      .best {
+        background-image: url(salad.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        color: white;
+      }
+      .best h1 {
+        background-color: #ffb30e;
+        border-radius: 150px;
+        color: white;
+        margin-top: 150px;
+        align-items: center;
+        margin-right: 120px;
+      }
+
+      .Vage {
+        color: #f17228;
+        background-color: #f1722833;
+        border-radius: 17px;
+      }
+
+      .Group {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .over {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .Popular {
+        align-items: center;
+        text-align: center;
+      }
+      .home {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+      }
+      .home img {
+        height: 200px;
+        width: 200px;
+      }
+      .Arena {
+        display: flex;
+        gap: 7px;
+        color: #ffb30e;
+      }
+      .Text {
+        text-align: center;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .Fast {
+        display: block;
+      }
+      .safe {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .Order {
+        display: flex;
+        color: #ffb30e;
+      }
+      .Now {
+        color: white;
+        border-radius: 12px;
+        background-color: #f17228;
+
+        text-align: center;
+        display: block;
+      }
+      .bourions {
+        display: block;
+      }
+      .gatau {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .does {
+        display: flex;
+        color: #f17228;
+      }
+      .juni {
+        display: flex;
+        background-color: #f17228;
+        border-radius: 12px;
+        color: #ffffff;
+
+        width: 100px;
+      }
+      .salad {
+        display: flex;
+        gap: 10px;
+        background-image: url(2gatau.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 100px;
+      }
+      .deals {
+        display: flex;
+        justify-content: space-around;
+      }
+      .Foodworld {
+        display: block;
+        color: #ffb30e;
+      }
+
+      .waGon {
+        color: #000;
+      }
+      .file {
+        display: flex;
+      }
+      .starr {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .spicy {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 200px;
+      }
+      .dolard {
+        color: #faaa01;
+      }
+      .Greys {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .pops {
+        padding-left: 100px;
+        gap: 0px;
+        color: #faaa01;
+      }
+      .Pizza {
+        display: block;
+      }
+      .Pizza img {
+        border-radius: 200px;
+        height: 100px;
+        width: 100px;
+      }
+      .fonts {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .fonts p {
+        text-align: center;
+      }
+      .kilogram p {
+        color: #fb3c00;
+      }
+      .kilogram {
+        display: flex;
+      }
+      .App {
+        display: flex;
+        text-align: center;
+        gap: 12px;
+        border-radius: 46px;
+        box-shadow: 0 5px 10px #ffae004a;
+        align-items: center;
+        padding: 1px 20px;
+        height: 200px;
+        width: 400px;
+
+        margin-left: 300px;
+        justify-content: space-between;
+      }
+      .App img {
+        height: 50px;
+        width: 50px;
+      }
+
+      .Crispy {
+        color: #ffb30e;
+      }
+      .Proceed {
+        color: white;
+        background-color: #ff8a00;
+        border-radius: 12px;
+
+        width: 200px;
+        text-align: center;
+      }
+      .large {
+        display: block;
+      }
+      .Dsize {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 300px;
+      }
+      .Dsize img {
+        height: 200px;
+        width: 300px;
+      }
+      .that {
+        color: #ffb30e;
+      }
+
+      .accessible {
+        display: block;
+        padding-bottom: 20px;
+      }
+      .Deliver {
+        display: block;
+        padding-top: 20px;
+      }
+      .Wanna {
+        color: #ffb30e;
+      }
+      .eat {
+        display: block;
+      }
+      .hot {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 200px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      .Install {
+        color: #faaa01;
+      }
+      .hot img {
+        height: 200px;
+        width: 300px;
+      }
+      .Get {
+        display: block;
+      }
+      .Install img {
+        height: 10px;
+        width: 10px;
+      }
+      .gogol {
+        display: flex;
+        border-radius: 30px;
+        box-shadow: #ffae004a;
+        align-items: center;
+      }
+      .Look {
+        display: block;
+      }
+      .plas {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        background-color: #f65900;
+        background-position: top 150px;
+      }
+      .lost {
+        display: flex;
+        gap: 12px;
+      }
+      .with {
+        color: wheat;
+        background-image: url(direction.png);
+        font-size: 56px;
+        align-items: center;
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .Francisco{
+        display: block;
+        color: white;
+        background-color: #000;
+      }
+      .Miami{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #000;
+        color: white;
+      }
+      .cities{
+        color: white;
+        background-color: #000;
+
+      }
+    </style>
   </head>
   <body>
     <nav class="food">
-      <div class="html">
+      <div class="Deliver">
         <img src="c:\Users\HP PC\Downloads\ks.png" alt="" />
         <h1>food<span class="waGon">waGon</span></h1>
       </div>
@@ -521,55 +960,32 @@
           Are you ready to order with <br />
           the best deals?
         </h1>
+        
       </div>
     </div>
-
-    <div class="Miami">
+   
+    <div class="Miami" >
+      
       <div class="Francisco">
         <h1>Our top cities</h1>
-        <p>
-          San Francisco <br />
-          Miami<br />
-          San Diego<br />
-          East Bay <br />
-          Long Beach
-        </p>
+        <p>San Francisco
+          <br> Miami<br>  San Diego<br>  East Bay <br> Long Beach</p>
       </div>
-      <div class="">
-        <p>
-          San Francisco <br />
-          Miami<br />
-          San Diego<br />
-          East Bay <br />
-          Long Beach
-        </p>
+       <div class="">
+        <p>San Francisco
+          <br> Miami<br>  San Diego<br>  East Bay <br> Long Beach</p>
       </div>
-      <div class="">
-        <p>
-          San Francisco <br />
-          Miami<br />
-          San Diego<br />
-          East Bay <br />
-          Long Beach
-        </p>
+       <div class="">
+        <p>San Francisco
+          <br> Miami<br>  San Diego<br>  East Bay <br> Long Beach</p>
       </div>
-      <div class="">
-        <p>
-          San Francisco <br />
-          Miami<br />
-          San Diego<br />
-          East Bay <br />
-          Long Beach
-        </p>
+       <div class="">
+        <p>San Francisco
+          <br> Miami<br>  San Diego<br>  East Bay <br> Long Beach</p>
       </div>
-      <div class="">
-        <p>
-          San Francisco <br />
-          Miami<br />
-          San Diego<br />
-          East Bay <br />
-          Long Beach
-        </p>
+       <div class="">
+        <p>San Francisco
+          <br> Miami<br>  San Diego<br>  East Bay <br> Long Beach</p>
       </div>
     </div>
   </body>
